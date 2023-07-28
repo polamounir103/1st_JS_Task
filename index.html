@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/all.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <nav class="navbar shadow-sm navbar-expand-lg navbar-secondary fixed-top" style="background-color: rgb(208, 208, 208);">
+        <div class="container">
+          <a class="navbar-brand fs-3 fw-bolder" href="#" ><img src="imges/1.png" alt="" width="80" height="50" class="rounded"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link fw-bold active" aria-current="page" href="#">Home</a>
+              <a class="nav-link fw-bold" href="#">Home</a>
+              <a class="nav-link fw-bold" href="#">Home</a>
+              <a class="nav-link fw-bold" href="#">Home</a>
+              <a class="nav-link fw-bold" href="#">Home</a>
+            </div>
+            <div class="cart-info ms-lg-5 text-dark">
+                <a class="btn p-0" id="cart"><i class="fa-solid fa-cart-shopping fs-5 text-dark"></i><span class="badge bg-dark rounded-circle text-light" id="cart-no"></span></a>
+                <a class="btn p-0 text-dark fs-3 fw-bold" style="display: none;" id="hide-cart"><i class="fa-solid fa-square-xmark"></i></a>
+                <!-- <span id="cart-no" class="fs-6"></span> -->
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="container mt-4 pt-2">
+          <div class="d-flex flex-wrap justify-content-evenly px-lg-5 mt-5 list bg-light card-container">
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem">
+
+              <!-- <img src="imges/S-car-1.png" class="card-img-top" alt="..."> -->
+              <div id="carouselExampleControls" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/Apple MacBook Pro 16 M1-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Apple MacBook Pro 16 M1-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Apple MacBook Pro 16 M1-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body" price="1000">
+                <h5 class="card-title" id="item-title1">MacBook pro 16
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class="fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">1000$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem">
+              <!-- <img src="imges/S-car-2.png" class="card-img-top" alt="..."> -->
+              <div id="carouselExampleControls2" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/DELL XPS 17-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/DELL XPS 17-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/DELL XPS 17-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+              <div class="card-body" price="1100">
+                <h5 class="card-title" id="item-title1">Dell XPS 17
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class="fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">1100$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+            
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem" >
+              <!-- <img src="imges/S-car-1.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls3" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/Dell-Inspron-1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/laptop-inspiron-15-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/dell-inspiron-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body" price="950">
+                <h5 class="card-title" id="item-title1">Dell Inspiron 15
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class=" fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">950$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem" >
+              <!-- <img src="imges/S-car-2.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls4" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/hp-envy-15-2020-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/HP_Envy_15 -2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/envy-15-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body "price="970">
+                <h5 class="card-title" id="item-title1">Hp Envy 15
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class=" fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">970$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem" >
+              <!-- <img src="imges/S-car-1.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls5" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/Lenovo IdeaPad -1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Lenovo IdeaPad -2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Lenovo IdeaPad -3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls5" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body" price="1150">
+                <h5 class="card-title" id="item-title1">Lenovo IdeaPad
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class=" fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">1150$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem">
+              <!-- <img src="imges/S-car-2.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls6" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/lenovo-legion-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/lenovo-legion-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/lenovo-legion-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls6" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body" price="650">
+                <h5 class="card-title" id="item-title1">Lenovo Legion
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class="fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">650$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+            
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem" >
+              <!-- <img src="imges/S-car-1.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls7" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/Zbook Studio 15-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Zbook Studio 15-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/Zbook Studio 15-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls7" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body" price="700">
+                <h5 class="card-title" id="item-title1">Hp Zbook G6
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class="fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">700$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+            <div class="card mt-4 shadow" style="width: 18rem;" id="proItem">
+              <!-- <img src="imges/S-car-2.png" class="card-img-top" alt="..."> -->
+
+              <div id="carouselExampleControls8" class="carousel slide p-2" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imges/MacBook Air-1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/MacBook Air-2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imges/MacBook Air-3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls8" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              
+
+              <div class="card-body" price="800">
+                <h5 class="card-title" id="item-title1">MacBook Air
+                </h5>
+                <span class="equal">=></span>
+                <span id="item-price" class="fw-bold text-dark  p-2 " style="background-color: rgb(230, 230, 230); border-radius: 4px;">800$</span>
+                <input class="btn btn-primary d-block w-100" id="buy-btn" type="submit" value="Add"></input>
+              </div>
+            </div> <!-- card -->
+
+
+
+          </div> <!-- outer Container -->
+            <!-- cart Contant -->
+            <div>
+              
+              <div id="cart-contant" style="display: none; font-family: monospace;" class="container shadow-lg w-50 mt-5 list bg-warning card-container pt-3 mb-lg-4">
+            </div>
+          </div> <!-- cart contant -->
+          <!-- ??????????????????????????????? -->
+          <div class="container last ">
+            <button class="btn p-0 text-dark fs-3 fw-bold" style="display: none;" id="hide-cart-button"><i class="fa-solid fa-square-xmark"></i></button>
+           
+           
+            <div class="d-flex justify-content-between flex-lg-row flex-column align-items-center w-25 mx-auto">
+              <button class="btn shadow bg-secondary text-light " id="cart-button" style=" display: block; width: 100px;">Cart
+              <span class="badge  rounded-circle" id="cart-no2">0</span></button>
+              <button id="cart-contant-clear" class="btn shadow bg-danger text-light mt-2 mt-lg-0" style=" width: 100px;"> clear </button> 
+            </div>
+          </div>
+<!-- //////////////////  Pricing  /////////////////////////// -->
+          <div class=" shadow container mb-5">
+            
+            <div class="d-flex flex-wrap justify-content-center mt-5 list card-container  flex-column flex-md-row align-items-center mx-auto" style="width: 45%;"> 
+              
+              <button class="btn bg-success shadow text-light" id="allprice" style="min-width: 120px;">Total Price</button>
+              
+              <div id="tolal-price" class=" shadow total-box btn bg-light text-dark text-center mt-2 mt-md-0 gap-5 "  style="min-width: 100px;">
+              </div>
+  
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
